@@ -227,7 +227,7 @@
       border: 1px solid transparent;
       border-radius: 999px;
       font-family: "Montserrat", sans-serif;
-      font-size: 0.78rem;
+      font-size: 0.9rem;
       font-weight: 700;
       line-height: 1;
       letter-spacing: 0.055em;
@@ -248,7 +248,7 @@
     .btn--small {
       min-height: 42px;
       padding: 0.65rem 1.1rem;
-      font-size: 0.68rem;
+      font-size: 0.8rem;
     }
 
     .btn--primary {
@@ -469,7 +469,7 @@
       .nav__list {
         flex-direction: row;
         align-items: center;
-        gap: 1.65rem;
+        gap: clamp(1.1rem, 2.2vw, 1.65rem);
       }
 
       .nav__list a {
@@ -688,6 +688,7 @@
     @media (min-width: 480px) {
       .hero__actions {
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
         max-width: none;
       }
@@ -2137,7 +2138,7 @@
         </p>
 
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#pricing">Выбрать дату</a>
+          <a class="btn btn--primary" href="#booking">Забронировать</a>
           <a class="btn btn--ghost" href="#program">Смотреть программу</a>
         </div>
 
@@ -2382,7 +2383,7 @@
               </div>
             </div>
 
-            <a class="btn btn--primary" href="#booking">Оставить заявку</a>
+            <a class="btn btn--primary" href="#booking">Забронировать</a>
           </article>
 
           <div class="date-list">
@@ -2692,7 +2693,7 @@
               <span class="form__error" id="consentError" aria-live="polite"></span>
             </div>
 
-            <button class="btn btn--primary form__submit" type="submit">Отправить заявку</button>
+            <button class="btn btn--primary form__submit" type="submit">Забронировать</button>
             <p class="form__privacy">Никакого спама — только ответ менеджера и детали тура.</p>
           </form>
         </div>
