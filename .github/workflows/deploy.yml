@@ -19,6 +19,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Check site files
+        run: |
+          test -f index.html
+          test -f style.css
+          grep -q 'href="style.css"' index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
